@@ -1,0 +1,41 @@
+$Id: CHANGELOG.txt,v 1.11 2009/05/12 06:33:41 rdeboer Exp $
+
+Changelog for Module Grants module for drupal 6.
+
+6.x-1.0
+=======
+Initial drupal 6 release.
+
+6.x-1.1
+=======
+o Improved translatability.
+o Removed spurious debug message
+
+6.x-1.2
+=======
+o Added German translations and .pot file [thanks: rastatt].
+
+6.x-2.0
+=======
+o Prevent roles that don't have "view revisions" permission from sneakily
+  viewing unpublished content by finding out the URL to the node [patch by 
+  Orgredude].
+o Also made code more robust for case where a module doesn't return grants
+  (although it implements hook_node_grants() [thanks: 2440media2].
+  
+6.x-2.1
+=======
+o Remove debug info.
+
+6.x-2.2
+=======
+o Made theming more flexible.
+
+6.x-2.3
+=======
+o Use module_grants.css
+
+6.x-2.4
+=======
+o #453436 Lenient option when AND-ing node access grants across modules [thanks: mcarbone]
+

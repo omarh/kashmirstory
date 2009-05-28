@@ -1,0 +1,13 @@
+; $Id: module_grants.info,v 1.4 2009/05/04 00:59:39 rdeboer Exp $
+name = Module Grants
+description = Enables access control for unpublished content and allows modules that operate on access grants to work together in the expected way.
+core = "6.x"
+
+
+
+; Information added by drupal.org packaging script on 2009-05-12
+version = "6.x-2.4"
+core = "6.x"
+project = "module_grants"
+datestamp = "1242169535"
+

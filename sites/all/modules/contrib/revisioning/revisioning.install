@@ -1,0 +1,19 @@
+<?php
+// $Id: revisioning.install,v 1.1 2009/03/20 01:32:05 rdeboer Exp $
+
+/**
+ * @file
+ * Install and uninstall hooks for Revisioning module
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function revisioning_install() {
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function revisioning_uninstall() {
+}
