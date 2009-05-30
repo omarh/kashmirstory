@@ -1,0 +1,18 @@
+<?php
+function latest_block($op='list' , $delta=0, $edit=array()) {
+   switch ($op) {
+     case 'list':
+       $blocks[0]['info'] = t('Latest Story Block');
+       return $blocks;
+     case 'view':
+       $result = db_query("SELECT * FROM node_revisions ORDER BY nid DESC LIMIT 3");
+       $i=0;
+       while ($row = db_fetch_object($result)) {
+        $items[] = l($row -> title,'node/'.$row->nid);
+       }
+       $block['subject'] = 'Latest Stories Block';
+       $block['content'] = theme('item_list', $items);
+       return $block;
+   }
+}
+?>
